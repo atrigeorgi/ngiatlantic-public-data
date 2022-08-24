@@ -1,0 +1,2 @@
+{"levelname": "DEBUG", "name": "user-45-scalability_slow_ARES_EC_3-5-150-0_2_phase1", "asctime": "2022-07-08 12:34:00,668", "message": "Connecting to servers ['localhost:33300']"}
+{"levelname": "DEBUG", "name": "user-45-scalability_slow_ARES_EC_3-5-150-0_2_phase1", "asctime": "2022-07-08 12:34:01,366", "message": "LIST-COMPLETE", "clientID": "45", "op_latency_start": 141136.839263188, "op_latency_end": 141137.534645898, "op_latency": 0.6953827099932823, "file_list": {"null": "45_0", "scalability_slow_ARES_EC_3-5-150-0_2": "1_1"}}
