@@ -1,0 +1,27 @@
+[servers]
+server0 ansible_ssh_host=ms1125.utah.cloudlab.us ansible_ssh_user=andria ansible_ssh_port=22 bind_address=0.0.0.0 redis_port=6379 public_ip=128.110.217.185   
+server1 ansible_ssh_host=ms1113.utah.cloudlab.us ansible_ssh_user=andria ansible_ssh_port=22 bind_address=0.0.0.0 redis_port=6379 public_ip=128.110.217.173   
+server2 ansible_ssh_host=ms1133.utah.cloudlab.us ansible_ssh_user=andria ansible_ssh_port=22 bind_address=0.0.0.0 redis_port=6379 public_ip=128.110.217.193   
+
+[servers:vars]
+replicas=1  
+start_cluster_automatically=1  
+cluster_mode=0  
+
+[readers]
+reader0 ansible_ssh_host=pcvm2-18.genirack.nyu.edu ansible_ssh_user=andria ansible_ssh_port=22 bind_address=0.0.0.0 redis_port=6379 public_ip=192.86.139.75 ansible_ssh_common_args='-o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -q -W %h:%p fffandria@bastion.ilabt.imec.be -i /local/experiment/src/experiments/fed4fire/example1/id_rsa"'  
+
+[writers]
+writer0 ansible_ssh_host=pcvm3-13.genirack.nyu.edu ansible_ssh_user=andria ansible_ssh_port=22 bind_address=0.0.0.0 redis_port=6379 public_ip=192.86.139.76 ansible_ssh_common_args='-o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -q -W %h:%p fffandria@bastion.ilabt.imec.be -i /local/experiment/src/experiments/fed4fire/example1/id_rsa"'  
+
+[nodes]
+utah1 ansible_ssh_host=ms1125.utah.cloudlab.us ansible_ssh_user=andria ansible_ssh_port=22 bind_address=0.0.0.0 redis_port=6379 public_ip=128.110.217.185 ansible_ssh_common_args='-o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -q -W %h:%p fffandria@bastion.ilabt.imec.be -i /local/experiment/src/experiments/fed4fire/example1/id_rsa"'  
+utah2 ansible_ssh_host=ms1113.utah.cloudlab.us ansible_ssh_user=andria ansible_ssh_port=22 bind_address=0.0.0.0 redis_port=6379 public_ip=128.110.217.173 ansible_ssh_common_args='-o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -q -W %h:%p fffandria@bastion.ilabt.imec.be -i /local/experiment/src/experiments/fed4fire/example1/id_rsa"'  
+utah3 ansible_ssh_host=ms1133.utah.cloudlab.us ansible_ssh_user=andria ansible_ssh_port=22 bind_address=0.0.0.0 redis_port=6379 public_ip=128.110.217.193 ansible_ssh_common_args='-o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -q -W %h:%p fffandria@bastion.ilabt.imec.be -i /local/experiment/src/experiments/fed4fire/example1/id_rsa"'  
+NYU1 ansible_ssh_host=pcvm2-18.genirack.nyu.edu ansible_ssh_user=andria ansible_ssh_port=22 bind_address=0.0.0.0 redis_port=6379 public_ip=192.86.139.75 ansible_ssh_common_args='-o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -q -W %h:%p fffandria@bastion.ilabt.imec.be -i /local/experiment/src/experiments/fed4fire/example1/id_rsa"'  
+NYU2 ansible_ssh_host=pcvm3-13.genirack.nyu.edu ansible_ssh_user=andria ansible_ssh_port=22 bind_address=0.0.0.0 redis_port=6379 public_ip=192.86.139.76 ansible_ssh_common_args='-o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -q -W %h:%p fffandria@bastion.ilabt.imec.be -i /local/experiment/src/experiments/fed4fire/example1/id_rsa"'  
+
+[clients]
+NYU1 ansible_ssh_host=pcvm2-18.genirack.nyu.edu ansible_ssh_user=andria ansible_ssh_port=22 bind_address=0.0.0.0 redis_port=6379 public_ip=192.86.139.75 ansible_ssh_common_args='-o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -q -W %h:%p fffandria@bastion.ilabt.imec.be -i /local/experiment/src/experiments/fed4fire/example1/id_rsa"'  
+NYU2 ansible_ssh_host=pcvm3-13.genirack.nyu.edu ansible_ssh_user=andria ansible_ssh_port=22 bind_address=0.0.0.0 redis_port=6379 public_ip=192.86.139.76 ansible_ssh_common_args='-o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -q -W %h:%p fffandria@bastion.ilabt.imec.be -i /local/experiment/src/experiments/fed4fire/example1/id_rsa"'  
+
