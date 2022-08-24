@@ -1,0 +1,2 @@
+{"levelname": "DEBUG", "name": "user-31-scalability_slow_ABD_3-5-50_2_phase1", "asctime": "2022-07-16 08:34:39,491", "message": "Connecting to servers ['localhost:33300']"}
+{"levelname": "DEBUG", "name": "user-31-scalability_slow_ABD_3-5-50_2_phase1", "asctime": "2022-07-16 08:34:39,893", "message": "LIST-COMPLETE", "clientID": "31", "op_latency_start": 65987.329306373, "op_latency_end": 65987.725477308, "op_latency": 0.3961709350114688, "file_list": {"null": "31_0", "scalability_slow_ABD_3-5-50_2": "1_1"}}

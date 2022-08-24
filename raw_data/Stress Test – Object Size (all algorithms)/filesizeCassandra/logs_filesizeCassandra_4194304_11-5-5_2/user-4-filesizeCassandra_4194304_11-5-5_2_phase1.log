@@ -1,0 +1,1 @@
+{"levelname": "DEBUG", "name": "user-4-filesizeCassandra_4194304_11-5-5_2_phase1", "asctime": "2022-07-17 18:25:34,897", "message": "READ-COMPLETE", "status": "SUCCESS", "objectID": "filesizeCassandra_4194304_11-5-5_2", "clientID": "4", "file_size": 4194304, "op_latency_start": 32095.91115017, "op_latency_end": 32096.990778404, "op_latency": 1.079628234001575}

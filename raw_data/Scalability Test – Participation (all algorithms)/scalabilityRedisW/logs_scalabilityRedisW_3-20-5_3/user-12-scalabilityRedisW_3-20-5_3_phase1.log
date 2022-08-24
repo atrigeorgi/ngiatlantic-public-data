@@ -1,0 +1,1 @@
+{"levelname": "DEBUG", "name": "user-12-scalabilityRedisW_3-20-5_3_phase1", "asctime": "2022-07-20 09:07:30,539", "message": "READ-COMPLETE", "status": "SUCCESS", "objectID": "scalabilityRedisW_3-20-5_3", "clientID": "12", "file_size": 1048576, "op_latency_start": 70384.17893165, "op_latency_end": 70384.967999618, "op_latency": 0.7890679679985624}
