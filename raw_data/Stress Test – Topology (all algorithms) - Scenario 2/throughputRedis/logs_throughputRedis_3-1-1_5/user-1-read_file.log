@@ -1,0 +1,1 @@
+{"levelname": "DEBUG", "name": "user-1-read_file", "asctime": "2022-07-04 00:21:14,953", "message": "READ-COMPLETE", "status": "SUCCESS", "objectID": "throughputRedis_3-1-1_5", "clientID": "1", "file_size": 32, "op_latency_start": 398742.144622591, "op_latency_end": 398742.146404514, "op_latency": 0.001781922997906804}
