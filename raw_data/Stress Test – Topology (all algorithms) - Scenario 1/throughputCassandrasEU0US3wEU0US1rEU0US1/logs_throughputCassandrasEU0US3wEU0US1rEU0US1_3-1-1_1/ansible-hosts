@@ -1,0 +1,22 @@
+[servers]
+server0 ansible_ssh_host=ms1125.utah.cloudlab.us ansible_ssh_user=andria ansible_ssh_port=22   
+server1 ansible_ssh_host=ms1113.utah.cloudlab.us ansible_ssh_user=andria ansible_ssh_port=22   
+server2 ansible_ssh_host=ms1133.utah.cloudlab.us ansible_ssh_user=andria ansible_ssh_port=22   
+
+[readers]
+reader0 ansible_ssh_host=pcvm2-18.genirack.nyu.edu ansible_ssh_user=andria ansible_ssh_port=22 ansible_ssh_common_args='-o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -q -W %h:%p fffandria@bastion.ilabt.imec.be -i /local/experiment/src/experiments/fed4fire/example1/id_rsa"'  
+
+[writers]
+writer0 ansible_ssh_host=pcvm3-13.genirack.nyu.edu ansible_ssh_user=andria ansible_ssh_port=22 ansible_ssh_common_args='-o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -q -W %h:%p fffandria@bastion.ilabt.imec.be -i /local/experiment/src/experiments/fed4fire/example1/id_rsa"'  
+
+[nodes]
+utah1 ansible_ssh_host=ms1125.utah.cloudlab.us ansible_ssh_user=andria ansible_ssh_port=22 ansible_ssh_common_args='-o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -q -W %h:%p fffandria@bastion.ilabt.imec.be -i /local/experiment/src/experiments/fed4fire/example1/id_rsa"'  
+utah2 ansible_ssh_host=ms1113.utah.cloudlab.us ansible_ssh_user=andria ansible_ssh_port=22 ansible_ssh_common_args='-o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -q -W %h:%p fffandria@bastion.ilabt.imec.be -i /local/experiment/src/experiments/fed4fire/example1/id_rsa"'  
+utah3 ansible_ssh_host=ms1133.utah.cloudlab.us ansible_ssh_user=andria ansible_ssh_port=22 ansible_ssh_common_args='-o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -q -W %h:%p fffandria@bastion.ilabt.imec.be -i /local/experiment/src/experiments/fed4fire/example1/id_rsa"'  
+NYU1 ansible_ssh_host=pcvm2-18.genirack.nyu.edu ansible_ssh_user=andria ansible_ssh_port=22 ansible_ssh_common_args='-o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -q -W %h:%p fffandria@bastion.ilabt.imec.be -i /local/experiment/src/experiments/fed4fire/example1/id_rsa"'  
+NYU2 ansible_ssh_host=pcvm3-13.genirack.nyu.edu ansible_ssh_user=andria ansible_ssh_port=22 ansible_ssh_common_args='-o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -q -W %h:%p fffandria@bastion.ilabt.imec.be -i /local/experiment/src/experiments/fed4fire/example1/id_rsa"'  
+
+[clients]
+NYU1 ansible_ssh_host=pcvm2-18.genirack.nyu.edu ansible_ssh_user=andria ansible_ssh_port=22 ansible_ssh_common_args='-o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -q -W %h:%p fffandria@bastion.ilabt.imec.be -i /local/experiment/src/experiments/fed4fire/example1/id_rsa"'  
+NYU2 ansible_ssh_host=pcvm3-13.genirack.nyu.edu ansible_ssh_user=andria ansible_ssh_port=22 ansible_ssh_common_args='-o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -q -W %h:%p fffandria@bastion.ilabt.imec.be -i /local/experiment/src/experiments/fed4fire/example1/id_rsa"'  
+

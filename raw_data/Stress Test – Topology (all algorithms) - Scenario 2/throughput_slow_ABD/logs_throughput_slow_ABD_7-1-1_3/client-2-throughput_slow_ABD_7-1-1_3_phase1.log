@@ -1,0 +1,1 @@
+{"levelname": "DEBUG", "name": "client-2-throughput_slow_ABD_7-1-1_3_phase1", "asctime": "2022-07-02 17:10:44,203", "message": "Connecting to servers ['193.190.127.227:55500', 'ms1040.utah.cloudlab.us:55500', 'pcvm5-3.genirack.nyu.edu:55500', '193.190.127.250:55500', 'pcvm1-3.instageni.idre.ucla.edu:55500', 'pcvm2-5.instageni.utdallas.edu:55500', '193.190.127.196:55500']"}

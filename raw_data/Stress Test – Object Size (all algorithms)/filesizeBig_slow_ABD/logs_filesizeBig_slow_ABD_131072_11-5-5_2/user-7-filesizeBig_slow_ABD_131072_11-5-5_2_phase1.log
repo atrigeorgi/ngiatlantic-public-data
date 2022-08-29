@@ -1,0 +1,2 @@
+{"levelname": "DEBUG", "name": "user-7-filesizeBig_slow_ABD_131072_11-5-5_2_phase1", "asctime": "2022-07-15 22:33:17,946", "message": "Connecting to servers ['localhost:33300']"}
+{"levelname": "DEBUG", "name": "user-7-filesizeBig_slow_ABD_131072_11-5-5_2_phase1", "asctime": "2022-07-15 22:33:18,167", "message": "LIST-COMPLETE", "clientID": "7", "op_latency_start": 29839.077324708, "op_latency_end": 29839.297127732, "op_latency": 0.21980302399970242, "file_list": {"null": "7_0", "filesizeBig_slow_ABD_131072_11-5-5_2": "1_1"}}

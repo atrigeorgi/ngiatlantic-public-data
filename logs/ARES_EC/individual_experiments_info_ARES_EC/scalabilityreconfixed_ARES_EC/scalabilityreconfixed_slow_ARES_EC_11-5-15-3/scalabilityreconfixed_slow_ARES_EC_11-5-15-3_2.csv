@@ -1,2 +1,0 @@
-,servers_no,readers_no,writers_no,reads_no,writes_no,recons_no,succ_writes_no,unsucc_writes_no,fast_ops_no,mean_write_operation_latency_EC,mean_read_operation_latency_EC,mean_write_operation_latency,mean_read_operation_latency,mean_recon_operation_latency
-0,11,15,5,1500,500,60,500,0,0,1.5007377211577553,2.8299045354648076,1.5007377211577553,2.8299045354648076,5.369416645399179

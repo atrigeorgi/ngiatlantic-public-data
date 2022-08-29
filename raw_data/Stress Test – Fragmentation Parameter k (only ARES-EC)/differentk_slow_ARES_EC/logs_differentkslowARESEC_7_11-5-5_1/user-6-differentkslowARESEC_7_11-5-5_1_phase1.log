@@ -1,0 +1,2 @@
+{"levelname": "DEBUG", "name": "user-6-differentkslowARESEC_7_11-5-5_1_phase1", "asctime": "2022-07-15 06:02:55,228", "message": "Connecting to servers ['localhost:33300']"}
+{"levelname": "DEBUG", "name": "user-6-differentkslowARESEC_7_11-5-5_1_phase1", "asctime": "2022-07-15 06:02:56,073", "message": "LIST-COMPLETE", "clientID": "6", "op_latency_start": 13328.577340039, "op_latency_end": 13329.41930503, "op_latency": 0.8419649909992586, "file_list": {"null": "6_0", "differentkslowARESEC_7_11-5-5_1": "1_1"}}

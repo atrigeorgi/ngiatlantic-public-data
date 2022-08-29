@@ -1,0 +1,22 @@
+[servers]
+server0 ansible_ssh_host=193.190.127.227 ansible_ssh_user=andria ansible_ssh_port=22 bind_address=0.0.0.0 redis_port=6379 public_ip=193.190.127.227 ansible_private_key_file=/local/experiment/src/experiments/fed4fire/example1/id_rsa   
+server1 ansible_ssh_host=193.190.127.250 ansible_ssh_user=andria ansible_ssh_port=22 bind_address=0.0.0.0 redis_port=6379 public_ip=193.190.127.250 ansible_private_key_file=/local/experiment/src/experiments/fed4fire/example1/id_rsa   
+server2 ansible_ssh_host=193.190.127.196 ansible_ssh_user=andria ansible_ssh_port=22 bind_address=0.0.0.0 redis_port=6379 public_ip=193.190.127.196 ansible_private_key_file=/local/experiment/src/experiments/fed4fire/example1/id_rsa   
+
+[servers:vars]
+replicas=1  
+start_cluster_automatically=1  
+cluster_mode=0  
+
+[writers]
+writer0 ansible_ssh_host=193.190.127.207 ansible_ssh_user=andria ansible_ssh_port=22 bind_address=0.0.0.0 redis_port=6379 public_ip=193.190.127.207 ansible_private_key_file=/local/experiment/src/experiments/fed4fire/example1/id_rsa ansible_ssh_common_args='-o ServerAliveInterval=120 -o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -oPort=22 -q -W %h:%p fffandria@bastion.ilabt.imec.be -i /local/experiment/src/experiments/fed4fire/example1/id_rsa"'  
+
+[nodes]
+imec1 ansible_ssh_host=193.190.127.227 ansible_ssh_user=andria ansible_ssh_port=22 bind_address=0.0.0.0 redis_port=6379 public_ip=193.190.127.227 ansible_private_key_file=/local/experiment/src/experiments/fed4fire/example1/id_rsa ansible_ssh_common_args='-o ServerAliveInterval=120 -o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -oPort=22 -q -W %h:%p fffandria@bastion.ilabt.imec.be -i /local/experiment/src/experiments/fed4fire/example1/id_rsa"'  
+imec2 ansible_ssh_host=193.190.127.250 ansible_ssh_user=andria ansible_ssh_port=22 bind_address=0.0.0.0 redis_port=6379 public_ip=193.190.127.250 ansible_private_key_file=/local/experiment/src/experiments/fed4fire/example1/id_rsa ansible_ssh_common_args='-o ServerAliveInterval=120 -o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -oPort=22 -q -W %h:%p fffandria@bastion.ilabt.imec.be -i /local/experiment/src/experiments/fed4fire/example1/id_rsa"'  
+imec3 ansible_ssh_host=193.190.127.196 ansible_ssh_user=andria ansible_ssh_port=22 bind_address=0.0.0.0 redis_port=6379 public_ip=193.190.127.196 ansible_private_key_file=/local/experiment/src/experiments/fed4fire/example1/id_rsa ansible_ssh_common_args='-o ServerAliveInterval=120 -o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -oPort=22 -q -W %h:%p fffandria@bastion.ilabt.imec.be -i /local/experiment/src/experiments/fed4fire/example1/id_rsa"'  
+imec4 ansible_ssh_host=193.190.127.207 ansible_ssh_user=andria ansible_ssh_port=22 bind_address=0.0.0.0 redis_port=6379 public_ip=193.190.127.207 ansible_private_key_file=/local/experiment/src/experiments/fed4fire/example1/id_rsa ansible_ssh_common_args='-o ServerAliveInterval=120 -o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -oPort=22 -q -W %h:%p fffandria@bastion.ilabt.imec.be -i /local/experiment/src/experiments/fed4fire/example1/id_rsa"'  
+
+[clients]
+imec4 ansible_ssh_host=193.190.127.207 ansible_ssh_user=andria ansible_ssh_port=22 bind_address=0.0.0.0 redis_port=6379 public_ip=193.190.127.207 ansible_private_key_file=/local/experiment/src/experiments/fed4fire/example1/id_rsa ansible_ssh_common_args='-o ServerAliveInterval=120 -o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -oPort=22 -q -W %h:%p fffandria@bastion.ilabt.imec.be -i /local/experiment/src/experiments/fed4fire/example1/id_rsa"'  
+
